@@ -42,14 +42,14 @@ export function SignIn() {
   }
 
   return (
-    <Card>
-      <CardHeader className="space-y-1">
+    <Card className="w-full max-w-sm mx-auto p-4 sm:p-6">
+      <CardHeader className="space-y-2 sm:space-y-1">
         <CardTitle className="text-2xl">Bienvenido</CardTitle>
         <CardDescription>Para iniciar sesión ingrese sus credenciales</CardDescription>
       </CardHeader>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-          <CardContent className="grid gap-4">
+          <CardContent className="grid gap-3 sm:gap-4">
             <FormField
               control={form.control}
               name="username"
